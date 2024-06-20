@@ -7,7 +7,8 @@
   rules:
     - name: Say Hello
       condition: event.i == 1
-      debug:
-        msg:
-           - "Message 1 {{ event }}"
-           - Second Message
+      action:
+        debug:
+          msg:
+             - "Message 1 {{ event }}"
+             - Second Message
